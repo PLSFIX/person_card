@@ -9,5 +9,7 @@ Add, remove or edit people cards.
 
 ## Bugs:
 * No IE support
-* Strange things happens in Firefox
+* Strange things happen in Firefox
 
+## Troubleshooting
+* Be sure db.json is writeable and editable
