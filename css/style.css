@@ -1,0 +1,302 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 10px;
+}
+.placeholder {
+	font-size: 1rem;
+}
+/* initial form */
+.popup-back {
+	background-color: rgba(76, 71, 71, 0.55);
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+}
+.popup-wrap {
+	display: table;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+}
+.popup-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+.popup-data {
+	width: 40%;
+	height: 285px;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+}
+.form-group {
+	margin: 8px 20px;
+	display: inline-block;
+	width: 90%;
+}
+.form-group:first-child {
+	margin-top: 30px;
+}
+.form-group input, .form-group textarea {
+	display: inline-block;
+	margin-top: 5px;
+	font-family: sans-serif;
+	outline: none;
+	border: 2px solid rgba(153, 153, 153, 0.75);
+	box-shadow: 0 0 1px #DBDBDB inset;
+	border-radius: 1px;
+}
+.form-group input {
+	width: 60%;
+}
+.form-group textarea {
+	width: 100%;
+	height: 65px;
+	padding: 0;
+}
+.form-group label {
+	display: block;
+	font-size: 1.1em;
+	color: rgba(51, 51, 51, 0.55);
+	font-weight: 500;
+}
+.form-group .error {
+	display: block;
+	position: absolute;
+	color: red;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.popup-data button {
+	display: block;
+	width: 90px;
+}
+.visible {
+	visibility: visible;
+	z-index: 10;
+}
+.form-group .input-error {
+	border: 2px solid red !important;
+}
+.submit {
+	padding: 3px 15px;
+	margin-top: 3px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.3em;
+	background-color: #CC0000;
+	color: #EFE8E8;
+	border-radius: 5px;
+	border: 1px solid #666666;
+	box-shadow: 0 0 1px rgba(74, 70, 70, 0.9) inset;
+}
+.submit:active {
+	box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.8) inset;
+}
+.closePopup {
+	display: block;
+	position: absolute;
+	margin: 3px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+.closePopup i {
+	color: black;
+}
+/* edit form */
+.edit {
+	top: 15px;
+	right: 15px;
+}
+.edit a {
+	text-decoration: none;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.5em;
+	background-color: #CC0000;
+	color: #EFE8E8;
+	border-radius: 5px;
+	border: 1px solid #666666;
+	box-shadow: 0 0 1px rgba(74, 70, 70, 0.9) inset;
+	padding: 3px 15px;
+}
+.edit a:active {
+	box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.8) inset;
+}
+.editBtn {
+	display: none;
+}
+.saveEdit {
+	display: none;
+	width: 75px;
+	float: left;
+}
+.cancelEdit {
+	display: none;
+	float: right;
+	width: 75px;
+	margin-left: 5px;
+}
+.editInput {
+	position: absolute;
+	top: 14px;
+	left: 0;
+	font-size: 1.5em;
+	padding: 0;
+	outline: 0;
+	background-color: #F3F3F3;
+	border: none;
+	font-family: sans-serif;
+}
+.editInput[id='editedName'] {
+	width: 50%;
+}
+.editInput[id='editedMail'] {
+	width: 50%;
+	color: #0000EE;
+	text-decoration: underline;
+}
+.editInput[id='editedComment'] {
+	width: 75%;
+	height: 45px;
+	resize: none;
+}
+.card .error {
+	display: block;
+	position: absolute;
+	color: red;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 3px;
+}
+.card .input-error {
+	border: 1px dashed rgba(255, 0, 0, 0.4);
+	border-radius: 2px;
+}
+
+/* links style */
+.wrap {
+	max-width: 50%;
+	min-width: 375px;
+	margin: 0 auto;
+}
+.links {
+	margin: 20px 0 12px;
+}
+.links a {
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 100;
+	font-size: 1.5em;
+	color: #EFE8E8;
+	border-radius: 5px;
+	
+}
+.invis {
+	visibility: hidden;
+}
+.hiden {
+	display: none;
+}
+.deletePerson {
+	display: block;
+	position: absolute;
+	top: -10px;
+	right: -5px;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: white;
+}
+.deletePerson:hover {
+	height: 17px;
+	width: 17px;
+	top: -11px;
+}
+.deletePerson i {
+	color: black;
+	font-size: 1.5rem;
+}
+.deletePerson:hover i {
+	font-size: 1.7rem;
+}
+.addUser {
+	padding: 3px 10px;
+	background-color: #CC0000;
+}
+.addUser:active {
+	box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.8) inset !important;
+}
+.select {
+	position: relative;
+	padding: 3px 15px;
+	margin: 17px 17px 0 0;
+}
+.select:nth-child(odd) {
+	background-color: #999999;
+	box-shadow: 0 0 1px #666666 inset;
+	border: 1px inset rgba(102, 102, 102, 0.5);
+}
+.select:nth-child(odd):active {
+	box-shadow: -2px -2px 10px rgba(99, 99, 99, 0.6) inset;
+}
+.select:nth-child(even) {
+	background-color: #CC0000;
+	box-shadow: 0 0 1px rgba(74, 70, 70, 0.9) inset;
+	border: 1px inset #666666;
+}
+.select:nth-child(even):active {
+	box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.8) inset !important;
+}
+
+/* userinfo style */
+.card {
+	display: none;
+	position: relative;
+	background-color: #F3F3F3;
+	margin: 0;
+	padding: 25px 20px 30px;
+	border: 1px solid #999999;
+	box-shadow: 0 0 2px #DBDBDB inset;
+	min-height: 141px;
+}
+.card li {
+	list-style: none;
+	margin: 3px 0 15px;
+	position: relative;
+}
+.card li:nth-last-child(1) {
+	margin: 0;
+	position: absolute;
+}
+.card h1 {
+	font-size: 1.2em;
+	font-weight: normal;
+	color: rgba(51, 51, 51, 0.4);
+	margin: 0;
+}
+.card a {
+	font-size: 1.5em;
+}
+.card p {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+/* focus */
+.focus {
+	display: block;
+}
+.btnFocus {
+	display: block;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit employee</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div id="popup-back" class="popup-back"></div>
+	<div id="popup-wrap" class="popup-wrap">
+		<div id="popup-container" class="popup-container">
+			<div class="popup-data">
+				<div class="form-group">
+					<label for="full-name">ФИО*</label>
+					<input type="text" id="full-name" class="initialInput" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Эл. почта*</label>
+					<input type="email" id="email" class="initialInput" required>
+				</div>
+				<div class="form-group">
+					<label for="comment">Комментарий</label>
+					<textarea id="comment" class="initialInput"></textarea>
+				</div>
+				<div class="form-group">
+					<a id="submit" class="submit" href="#">Добавить</a>
+				</div>
+				<div class="closePopup"><i id="closePopup" class="fa fa-times-circle fa-2x"></i></div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="container">
+			<div id="links" class="links">
+				<a href="#" id="addUser" class="addUser"><i class="fa fa-user-plus"></i></a>
+			</div>
+			<div id="cardlist">
+				
+			</div>
+			<div class="placeholder">
+				<p>Здесь пока никого нет :(</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
