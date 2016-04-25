@@ -12,4 +12,5 @@ Add, remove or edit people cards.
 * Strange things happen in Firefox
 
 ## Troubleshooting
+* Obviously, you need a webserver to run this app
 * Be sure db.json is writeable and editable
